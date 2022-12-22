@@ -13,14 +13,14 @@ function Form() {
 
     const newPerson = {
       name: name,
-      mail: mail,
+      email: mail,
       age: age,
       year: year,
       month: month_raw,
       day: date_raw
     }
 
-    const res = await fetch('http://localhost:3001/users', {
+    const res = await fetch('http://localhost:3001/blogs', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

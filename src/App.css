@@ -3,6 +3,24 @@
   margin:0 auto;
 }
 
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
 table, td {
   border: 1px solid;
   padding:2px;
@@ -12,6 +30,20 @@ table, td {
   margin:0 auto;
   max-width:900px;
   margin-top:20px;
+}
+
+.btn-delete {
+  color:white;
+  font-weight:bold;
+  background-color:tomato;
+  padding:8px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+table a {
+  text-decoration:none;
+  color:tomato;
 }
 
 th {
@@ -27,6 +59,17 @@ color:#4CAF50;
   color:slategrey;
   font-weight:bold;
   text-align:center;
+}
+
+.delete {
+background-color:#f7d6d9;
+min-height:100px;
+margin:0 auto;
+}
+
+.p-delete {
+  color:#8f333b;
+  padding:16px;
 }
 
 .form {

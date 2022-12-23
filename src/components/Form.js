@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Form.component.scss';
 
 function Form() {
   let newDate = new Date()

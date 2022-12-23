@@ -1,3 +1,4 @@
+import './Navbar.component.scss';
 const Navbar = () => {
     return (
       <nav className="navbar">

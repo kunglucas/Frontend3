@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
+import './Table.component.scss';
+
 const BlogList = ({ blogs }) => {
   return (
+    <div className="table-container">
     <table>
     <tr>
       <th>Name</th>
@@ -20,6 +23,7 @@ const BlogList = ({ blogs }) => {
   </tr>
       ))}
     </table>
+    </div>
   );
 }
  

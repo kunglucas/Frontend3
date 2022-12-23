@@ -1,3 +1,5 @@
+import './Table.component.scss';
+
 const Delete = ({ Delete }) => {
     return (
         <div className="delete">

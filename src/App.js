@@ -1,6 +1,5 @@
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-import Calc from './components/Calc';
 import Form from './components/Form';
 import Delete from './components/Delete';
 import UsersInfo from './components/UsersInfo';
@@ -16,7 +15,6 @@ function App() {
     <Switch>
       <Route exact path="/">
         <Home />
-        <Calc/>
       </Route>
       <Route exact path="/create">
         <Form />

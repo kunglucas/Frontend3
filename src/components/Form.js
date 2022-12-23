@@ -1,13 +1,17 @@
 import { useState } from 'react';
+import { useHistory } from "react-router-dom";
 
 function Form() {
   let newDate = new Date()
   const[name, setName] = useState('')
   const[mail, setMail] = useState('')
   const[age, setAge] = useState('')
+  const[type, setType] = useState('')
   let year = newDate.getFullYear();
   let date_raw = newDate.getDate();
   let month_raw = newDate.getMonth() + 1;
+  const history = useHistory();
+
   const handleSubmit = async  (e) => {
     e.preventDefault()
 
@@ -15,9 +19,11 @@ function Form() {
       name: name,
       email: mail,
       age: age,
+      type: type,
       year: year,
       month: month_raw,
       day: date_raw
+      
     }
 
     const res = await fetch('http://localhost:3001/blogs', {
@@ -26,6 +32,8 @@ function Form() {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(newPerson) //Add the variable newperson.
+    }).then(() => {
+      history.push('/');
     })
       console.log(res)
   }
@@ -36,6 +44,14 @@ function Form() {
       <br/>
       <label htmlFor="name">Email: </label>
       <input type="email" placeholder="name@example.com" id="mail" value={mail} onChange={(e) => setMail(e.target.value)} required/>
+      <br/>
+      <label for="type">What are you:</label>
+      <select name="type" id="type" value={type} onChange={(e) => setType(e.target.value)}>
+        <option value="human">Human</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="other">Other</option>
+      </select>
       <br/>
       <label htmlFor="name">Age: </label>
       <input type="number" placeholder="Your age" id="age" value={age} onChange={(e) => setAge(e.target.value)} required/>

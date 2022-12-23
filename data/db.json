@@ -1,30 +1,33 @@
 {
   "blogs": [
     {
-      "name": "Lucas",
-      "email": "lucas.larsson2@yh.nackademin.se",
-      "age": "29",
-      "year": 2022,
-      "month": 12,
-      "day": 22,
-      "id": 1
-    },
-    {
       "name": "Gustav",
       "email": "gustav.franchell@yh.nackademin.se",
       "age": "29",
+      "type": "human",
       "year": 2022,
       "month": 12,
-      "day": 22,
+      "day": 23,
+      "id": 1
+    },
+    {
+      "name": "Quinyx",
+      "email": "hanin_90@hotmail.com",
+      "age": "1",
+      "type": "dog",
+      "year": 2022,
+      "month": 12,
+      "day": 23,
       "id": 2
     },
     {
-      "name": "John",
-      "email": "john@test.com",
-      "age": "50",
+      "name": "Lucas",
+      "email": "lucas.larsson2@yh.nackademin.se",
+      "age": "29",
+      "type": "human",
       "year": 2022,
       "month": 12,
-      "day": 22,
+      "day": 23,
       "id": 3
     }
   ]

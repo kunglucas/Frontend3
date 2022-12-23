@@ -1,6 +1,18 @@
-const Calc = ({ Calc }) => {
+import { Link } from 'react-router-dom';
+
+const Calc = ({ blogs }) => {
+    
     return (
-        <p className="stats">Sum of all users age together are currently: <strong>61</strong></p>
+        <div className="stats">
+                    {blogs.map(blog => 
+            (
+            <>
+            <div className="blog-preview" key={blog.id}>
+              <p>{blog.age }</p>
+            </div>
+            </>
+                ))}
+        </div>
     );
   }
    

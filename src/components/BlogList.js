@@ -6,9 +6,10 @@ const BlogList = ({ blogs }) => {
       <th>Name</th>
       <th>Age</th>
       <th>Email</th>
-      <th>Action</th>
+      <th>Type</th>
     </tr>
       {blogs.map(blog => (
+  <>
   <tr className="blog-preview" key={blog.id}>
     <td><Link to={`/blogs/${blog.id}`}>
     {blog.name }
@@ -16,8 +17,10 @@ const BlogList = ({ blogs }) => {
     </td>
     <td>{blog.age }</td>
     <td>{blog.email }</td>
-    <td>Delete</td>
+    <td>{blog.type }</td>
   </tr>
+  </>
+
       ))}
     </table>
   );

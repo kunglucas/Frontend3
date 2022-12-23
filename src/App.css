@@ -1,6 +1,10 @@
+body {
+  background-color:#25476a;
+}
 .content {
   max-width:900px;
   margin:0 auto;
+  background-color:white;
 }
 
 .navbar {
@@ -94,4 +98,5 @@ form {
   color:white;
   font-weight:bold;
   margin-top:20px;
+  cursor:pointer;
 }

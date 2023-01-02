@@ -3,7 +3,7 @@
     {
       "name": "Gustav",
       "email": "gustav.franchell@yh.nackademin.se",
-      "age": "29",
+      "age": 29,
       "type": "human",
       "year": 2022,
       "month": 12,
@@ -11,24 +11,24 @@
       "id": 1
     },
     {
-      "name": "Quinyx",
-      "email": "hanin_90@hotmail.com",
-      "age": "1",
-      "type": "dog",
-      "year": 2022,
-      "month": 12,
-      "day": 23,
-      "id": 2
-    },
-    {
       "name": "Lucas",
       "email": "lucas.larsson2@yh.nackademin.se",
-      "age": "29",
+      "age": 29,
       "type": "human",
       "year": 2022,
       "month": 12,
       "day": 23,
       "id": 3
+    },
+    {
+      "name": "Bagher",
+      "email": "bagher@gmail.com",
+      "age": 19,
+      "type": "cat",
+      "year": 2022,
+      "month": 12,
+      "day": 23,
+      "id": 4
     }
   ]
 }

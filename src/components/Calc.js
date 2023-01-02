@@ -1,19 +1,16 @@
 import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 
 const Calc = ({ blogs }) => {
-    
-    return (
-        <div className="stats">
-                    {blogs.map(blog => 
-            (
-            <>
-            <div className="blog-preview" key={blog.id}>
-              <p>{blog.age }</p>
-            </div>
-            </>
-                ))}
-        </div>
-    );
-  }
+
+
+  const ages = blogs.map((blog) => {
+    return blog.age
+  });
+
+  const sum = ages.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+  return <div>Total age: {sum}</div>;
+}
    
   export default Calc;

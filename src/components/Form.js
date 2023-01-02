@@ -6,6 +6,7 @@ function Form() {
   const[name, setName] = useState('')
   const[mail, setMail] = useState('')
   const[age, setAge] = useState('')
+  const parseAge = parseInt(age);
   const[type, setType] = useState('')
   let year = newDate.getFullYear();
   let date_raw = newDate.getDate();
@@ -18,7 +19,7 @@ function Form() {
     const newPerson = {
       name: name,
       email: mail,
-      age: age,
+      age: parseAge,
       type: type,
       year: year,
       month: month_raw,

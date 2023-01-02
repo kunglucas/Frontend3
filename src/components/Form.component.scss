@@ -1,0 +1,35 @@
+form {
+   margin-left: auto;
+   margin-right: auto;
+    margin-top: 20px;
+    background-color:rgb(77, 130, 168);
+    min-height:200px;
+    width:50%;
+    border-radius:6px;
+    color: azure;
+    padding: 100px;
+  
+    label {
+  display: inline-block;
+    text-align: right;
+    width: 150px;
+    }
+  }
+   
+  form {
+    padding:22px;
+  }
+  .button {
+    background-color:#1f549e;
+    padding:12px;
+    color:azure;
+    font-weight:bold;
+    margin-top:20px;
+    margin-left: 150px;
+    border-radius:6px;
+    
+    &:hover {
+        opacity: 0.9;
+        cursor:pointer;
+    }
+  }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useHistory } from "react-router-dom";
+import './Form.component.scss';
 
 function Form() {
   let newDate = new Date()
@@ -27,7 +28,7 @@ function Form() {
       
     }
 
-    const res = await fetch('http://localhost:3001/blogs', {
+    const res = await fetch('http://localhost:3001/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

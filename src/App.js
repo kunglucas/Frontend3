@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Form from './components/Form';
 import Delete from './components/Delete';
 import UsersInfo from './components/UsersInfo';
-import './App.css';
+import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <Route exact path="/create">
         <Form />
       </Route>
-      <Route exact path="/blogs/:id">
+      <Route exact path="/users/:id">
           <UsersInfo />
       </Route>
       <Route exact path="/success">

@@ -1,3 +1,5 @@
+import './Form.component.scss';
+
 const Delete = ({ Delete }) => {
     return (
         <div className="delete">

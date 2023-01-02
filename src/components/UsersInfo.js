@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const UsersInfo = () => {
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch('http://localhost:3001/blogs/' + id);
+    const { data: blog, error} = useFetch('http://localhost:3001/blogs/' + id);
     const history = useHistory();
     const handleDelete = () => {
         fetch('http://localhost:3001/blogs/' + blog.id, {
@@ -23,7 +23,6 @@ const UsersInfo = () => {
           <th>Day</th>
           <th>Edit</th>
         </tr>
-        { isPending && <div>Loading...</div> }
         { error && <div>{ error }</div> }
         { blog && (
           <tr>

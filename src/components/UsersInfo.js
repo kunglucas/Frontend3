@@ -1,6 +1,7 @@
 import { useHistory, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
-
+//This component is for the individual users and shows som information about the users aswell as the date the user was registered.
+//We have written a function making it possible to delete a user using a delete button.
 const UsersInfo = () => {
     const { id } = useParams();
     const { data: user, error, isPending } = useFetch('http://localhost:3001/users/' + id);

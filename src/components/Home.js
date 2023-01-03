@@ -14,7 +14,8 @@ const Home = () => {
         setUsers(data);
       })
   }, [])
-
+  //The Home component gets and outputs the components UserList, that shows the table with user information and 
+  //Calc that calculates the total age.   
   return (
     <div className="home">
       {users && <UserList users={users} />}

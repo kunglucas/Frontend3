@@ -1,13 +1,13 @@
 import './Navbar.component.scss';
 import { Link } from "react-router-dom";
-
+//This component is the navbar. We use Link instead of a tags to avoid having 
+//the application reload each time you press the links in the navbar. 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <h1>Lucas & Gustav</h1>
       <div className="links">
       <Link to="/">Home</Link>
-         {/* Vi bör ändra länkarna till: <Link to="/">Home</Link> och samma nedan */} 
          <Link to="/create">Add user</Link>
       </div>
     </nav>

@@ -6,7 +6,7 @@ import Delete from './components/Delete';
 import UsersInfo from './components/UsersInfo';
 import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+//Here we have created the different routes.
 function App() {
   return (
     <Router>

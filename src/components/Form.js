@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import './Form.component.scss';
-
+//This component outputs the form where you can submit user information. 
 function Form() {
   let newDate = new Date()
   const[name, setName] = useState('')
@@ -33,7 +33,7 @@ function Form() {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(newPerson) //Add the variable newperson.
+      body: JSON.stringify(newPerson) 
     }).then(() => {
       history.push('/');
     })

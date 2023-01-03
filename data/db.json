@@ -41,16 +41,6 @@
       "id": 8
     },
     {
-      "name": "Gustav",
-      "email": "gustav.franchell@yh.nackademin.se",
-      "age": 29,
-      "type": "human",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 9
-    },
-    {
       "name": "Jesus",
       "email": "jorden@gmail.com",
       "age": 2023,
@@ -109,6 +99,36 @@
       "month": 1,
       "day": 3,
       "id": 12
+    },
+    {
+      "name": "OJsh",
+      "email": "HUed@gmail.com",
+      "age": 4,
+      "type": "dog",
+      "year": 2023,
+      "month": 1,
+      "day": 3,
+      "id": 13
+    },
+    {
+      "name": "v",
+      "email": "ef@kor",
+      "age": 2,
+      "type": "",
+      "year": 2023,
+      "month": 1,
+      "day": 3,
+      "id": 14
+    },
+    {
+      "name": "Victor",
+      "email": "victor@mail.com",
+      "age": 26,
+      "type": "human",
+      "year": 2023,
+      "month": 1,
+      "day": 3,
+      "id": 15
     }
   ]
 }

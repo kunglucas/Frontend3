@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import './UserList.component.scss'
 
-
+// This component outputs all the user information from the JSON.db to the table on the Home page. 
+//We have created a search function that makes it possible to search for names, emails and types.
 const UserList = ({ users }) => {
   const [search, setSearch] = useState('')
   return (

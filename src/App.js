@@ -20,7 +20,7 @@ function App() {
       <Route exact path="/create">
         <Form />
       </Route>
-      <Route exact path="/blogs/:id">
+      <Route exact path="/users/:id">
           <UsersInfo />
       </Route>
       <Route exact path="/success">

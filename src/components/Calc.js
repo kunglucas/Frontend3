@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 
-const Calc = ({ blogs }) => {
+const Calc = ({ users }) => {
 
 
-  const ages = blogs.map((blog) => {
-    return blog.age
+  const ages = users.map((user) => {
+    return user.age
   });
 
   const sum = ages.reduce((accumulator, currentValue) => accumulator + currentValue, 0);

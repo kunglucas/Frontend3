@@ -3,10 +3,10 @@ import useFetch from "./useFetch";
 
 const UsersInfo = () => {
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch('http://localhost:3001/blogs/' + id);
+    const { data: user, error, isPending } = useFetch('http://localhost:3001/users/' + id);
     const history = useHistory();
     const handleDelete = () => {
-        fetch('http://localhost:3001/blogs/' + blog.id, {
+        fetch('http://localhost:3001/users/' + user.id, {
         method: 'DELETE'
         }).then(() => {
           history.push('/success');
@@ -25,14 +25,14 @@ const UsersInfo = () => {
         </tr>
         { isPending && <div>Loading...</div> }
         { error && <div>{ error }</div> }
-        { blog && (
+        { user && (
           <tr>
-            <td>{ blog.name }</td>
-            <td>{ blog.age }</td>
-            <td>{ blog.email }</td>
-            <td>{ blog.year }</td>
-            <td>{ blog.month }</td>
-            <td>{ blog.day }</td>
+            <td>{ user.name }</td>
+            <td>{ user.age }</td>
+            <td>{ user.email }</td>
+            <td>{ user.year }</td>
+            <td>{ user.month }</td>
+            <td>{ user.day }</td>
             <td><button className="btn-delete" onClick={handleDelete}>Delete</button></td>
           </tr>
         )}

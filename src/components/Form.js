@@ -27,7 +27,7 @@ function Form() {
       
     }
 
-    const res = await fetch('http://localhost:3001/blogs', {
+    const res = await fetch('http://localhost:3001/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

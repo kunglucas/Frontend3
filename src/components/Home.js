@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react";
-import BlogList from "./BlogList";
+import UserList from "./UserList";
 import Calc from "./Calc";
 
 const Home = () => {
-  const [blogs, setBlogs] = useState(null)
+  const [users, setUsers] = useState(null)
 
   useEffect(() => {
-    fetch('http://localhost:3001/blogs')
+    fetch('http://localhost:3001/users')
       .then(res => {
         return res.json();
       })
       .then(data => {
-        setBlogs(data);
+        setUsers(data);
       })
   }, [])
 
   return (
     <div className="home">
-      {blogs && <BlogList blogs={blogs} />}
-      {blogs && <Calc blogs={blogs} />}
+      {users && <UserList users={users} />}
+      {users && <Calc users={users} />}
     </div>
   );
 }

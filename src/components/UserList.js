@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import './UserList.component.scss'
 
 
-const BlogList = ({ users }) => {
+const UserList = ({ users }) => {
   const [search, setSearch] = useState('')
   return (
-    <table id="tableData">
+
+    <div className="table-container">
     <input placeholder="Search table.." type="text" onChange={(e) => setSearch(e.target.value)} />
+          <table id="tableData">
    <tr>
       <th>Name</th>
       <th>Age</th>
@@ -33,7 +36,9 @@ const BlogList = ({ users }) => {
 
       ))}
     </table>
+    </div>
+
   );
 }
  
-export default BlogList;
+export default UserList;

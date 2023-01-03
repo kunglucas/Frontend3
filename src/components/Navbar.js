@@ -1,13 +1,17 @@
+import './Navbar.component.scss';
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
-    return (
-      <nav className="navbar">
-        <h1>Lucas & Gustav</h1>
-        <div className="links">
-          <a href="/">Home</a>
-          <a href="/create">Add user</a>
-        </div>
-      </nav>
-    );
-  }
-   
-  export default Navbar;
+  return (
+    <nav className="navbar">
+      <h1>Lucas & Gustav</h1>
+      <div className="links">
+      <Link to="/">Home</Link>
+         {/* Vi bör ändra länkarna till: <Link to="/">Home</Link> och samma nedan */} 
+         <Link to="/create">Add user</Link>
+      </div>
+    </nav>
+  );
+}
+ 
+export default Navbar;

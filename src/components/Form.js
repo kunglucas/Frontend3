@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useHistory } from "react-router-dom";
+import './Form.component.scss';
 
 function Form() {
   let newDate = new Date()
@@ -46,7 +47,7 @@ function Form() {
       <label htmlFor="name">Email: </label>
       <input type="email" placeholder="name@example.com" id="mail" value={mail} onChange={(e) => setMail(e.target.value)} required/>
       <br/>
-      <label for="type">What are you:</label>
+      <label for="type">Type:</label>
       <select name="type" id="type" value={type} onChange={(e) => setType(e.target.value)}>
         <option value="human">Human</option>
         <option value="dog">Dog</option>

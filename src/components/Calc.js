@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './Calc.component.scss';
 import React, { useState } from 'react';
 
 const Calc = ({ users }) => {

@@ -1,17 +1,26 @@
 import { Link } from 'react-router-dom';
-import './Table.component.scss';
+import './UserList.component.scss';
+import { useState } from 'react';
+
+
 
 const UserList = ({ users }) => {
+  const [search, setSearch] = useState('')
   return (
     <div className="table-container">
-    <table>
-    <tr>
+    <table id="tableData">
+    <input placeholder="Search table.." type="text" onChange={(e) => setSearch(e.target.value)} />
+   <tr>
       <th>Name</th>
       <th>Age</th>
       <th>Email</th>
       <th>Type</th>
     </tr>
-      {users.map(user => (
+    
+      {users.filter((user) => {
+        return search.toLowerCase() === '' ? user : user.name.toString().toLowerCase().includes(search.toLowerCase()) || user.type.toString().toLowerCase().includes(search.toLowerCase()) || user.email.toString().toLowerCase().includes(search.toLowerCase())
+
+      }).map(user => (
   <>
   <tr className="user-preview" key={user.id}>
     <td><Link to={`/users/${user.id}`}>
@@ -21,10 +30,7 @@ const UserList = ({ users }) => {
     <td>{user.age }</td>
     <td>{user.email }</td>
     <td>
-    {/* {user.type } */}
-    <Link to={`/users/${user.type}`}>
-    {user.type}
-    </Link>
+    {user.type }
     </td>
   </tr>
   </>
@@ -34,5 +40,4 @@ const UserList = ({ users }) => {
     </div>
   );
 }
- 
 export default UserList;

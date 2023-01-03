@@ -2,11 +2,11 @@ import { useHistory, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 
 const UsersInfo = () => {
-    const { id, type } = useParams();
-    const { data: user, error} = useFetch('http://localhost:3001/users/' + id);
+    const { id } = useParams();
+    const { data: user, error, isPending } = useFetch('http://localhost:3001/users/' + id);
     const history = useHistory();
     const handleDelete = () => {
-        fetch('http://localhost:3001/users/' + user.id || user.type, {
+        fetch('http://localhost:3001/users/' + user.id, {
         method: 'DELETE'
         }).then(() => {
           history.push('/success');

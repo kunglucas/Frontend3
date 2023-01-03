@@ -7,6 +7,9 @@ table{
     margin:0 auto;
     max-width:900px;
     margin-top:20px;
+    th:hover {
+      cursor: pointer;
+    }
     td {
         border: 1px solid rgb(26, 31, 193);
         border-radius: 3px;

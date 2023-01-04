@@ -18,6 +18,7 @@ const UsersInfo = () => {
           <th>Name</th>
           <th>Age</th>
           <th>Email</th>
+          <th>Type</th>
           <th>Year</th>
           <th>Month</th>
           <th>Day</th>
@@ -30,6 +31,7 @@ const UsersInfo = () => {
             <td>{ user.name }</td>
             <td>{ user.age }</td>
             <td>{ user.email }</td>
+            <td>{ user.type }</td>
             <td>{ user.year }</td>
             <td>{ user.month }</td>
             <td>{ user.day }</td>

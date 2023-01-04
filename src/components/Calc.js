@@ -11,7 +11,7 @@ const Calc = ({ users }) => {
 
   const sum = ages.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-  return <div>Total age: {sum}</div>;
+  return <div>Total age: <strong className="sum">{sum}</strong></div>;
 }
    
   export default Calc;

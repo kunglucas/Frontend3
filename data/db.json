@@ -21,16 +21,6 @@
       "id": 6
     },
     {
-      "name": "Kenneth",
-      "email": "kenneth@cool.com",
-      "age": 37,
-      "type": "human",
-      "year": 2023,
-      "month": 1,
-      "day": 2,
-      "id": 7
-    },
-    {
       "name": "Quinyx",
       "email": "quinton@dog.com",
       "age": 1,
@@ -48,67 +38,47 @@
       "year": 2023,
       "month": 1,
       "day": 3,
-      "id": 9
+      "id": 10
     },
     {
       "name": "Jesus",
-      "email": "jorden@gmail.com",
-      "age": 2023,
-      "type": "",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 11
-    },
-    {
-      "name": "Jesus",
-      "email": "jorden@gmail.com",
-      "age": 2023,
-      "type": "",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 11
-    },
-    {
-      "name": "Jesus",
-      "email": "jorden@gmail.com",
-      "age": 2023,
-      "type": "",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 11
-    },
-    {
-      "name": "Jesus",
-      "email": "jorden@gmail.com",
-      "age": 2023,
-      "type": "",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 11
-    },
-    {
-      "name": "Jesus",
-      "email": "jorden@gmail.com",
-      "age": 2023,
-      "type": "",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 11
-    },
-    {
-      "name": "Gud",
-      "email": "universum@mail.com",
-      "age": 1,
+      "email": "kristus@heaven.com",
+      "age": 20,
       "type": "other",
       "year": 2023,
       "month": 1,
-      "day": 3,
+      "day": 4,
+      "id": 11
+    },
+    {
+      "name": "John",
+      "email": "doe@email.com",
+      "age": 5,
+      "type": "dog",
+      "year": 2023,
+      "month": 1,
+      "day": 4,
       "id": 12
+    },
+    {
+      "name": "Hej",
+      "email": "hahaha@hotmail.com",
+      "age": 3,
+      "type": "dog",
+      "year": 2023,
+      "month": 1,
+      "day": 4,
+      "id": 13
+    },
+    {
+      "name": "orebro",
+      "email": "orebro@hotmail.com",
+      "age": 2,
+      "type": "other",
+      "year": 2023,
+      "month": 1,
+      "day": 4,
+      "id": 14
     }
   ]
 }

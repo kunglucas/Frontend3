@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Form from './components/Form';
@@ -8,6 +7,7 @@ import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 //Here we have created the different routes.
 function App() {
+  
   return (
     <Router>
           <div className="App">

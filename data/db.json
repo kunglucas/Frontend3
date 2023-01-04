@@ -21,16 +21,6 @@
       "id": 6
     },
     {
-      "name": "Kenneth",
-      "email": "kenneth@cool.com",
-      "age": 37,
-      "type": "human",
-      "year": 2023,
-      "month": 1,
-      "day": 2,
-      "id": 7
-    },
-    {
       "name": "Quinyx",
       "email": "quinton@dog.com",
       "age": 1,
@@ -41,104 +31,54 @@
       "id": 8
     },
     {
-      "name": "Jesus",
-      "email": "jorden@gmail.com",
-      "age": 2023,
-      "type": "",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 11
-    },
-    {
-      "name": "Jesus",
-      "email": "jorden@gmail.com",
-      "age": 2023,
-      "type": "",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 11
-    },
-    {
-      "name": "Jesus",
-      "email": "jorden@gmail.com",
-      "age": 2023,
-      "type": "",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 11
-    },
-    {
-      "name": "Jesus",
-      "email": "jorden@gmail.com",
-      "age": 2023,
-      "type": "",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 11
-    },
-    {
-      "name": "Jesus",
-      "email": "jorden@gmail.com",
-      "age": 2023,
-      "type": "",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 11
-    },
-    {
-      "name": "Gud",
-      "email": "universum@mail.com",
-      "age": 1,
-      "type": "other",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 12
-    },
-    {
-      "name": "OJsh",
-      "email": "HUed@gmail.com",
-      "age": 4,
-      "type": "dog",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 13
-    },
-    {
-      "name": "v",
-      "email": "ef@kor",
-      "age": 2,
-      "type": "",
-      "year": 2023,
-      "month": 1,
-      "day": 3,
-      "id": 14
-    },
-    {
-      "name": "Victor",
-      "email": "victor@mail.com",
-      "age": 26,
+      "name": "Gustav",
+      "email": "gustav.franchell@yh.nackademin.se",
+      "age": 29,
       "type": "human",
       "year": 2023,
       "month": 1,
       "day": 3,
-      "id": 15
+      "id": 10
     },
     {
-      "name": "JIue",
-      "email": "GUHYsyt@ghim",
-      "age": 34,
-      "type": "cat",
+      "name": "Jesus",
+      "email": "kristus@heaven.com",
+      "age": 20,
+      "type": "other",
       "year": 2023,
       "month": 1,
       "day": 4,
-      "id": 16
+      "id": 11
+    },
+    {
+      "name": "John",
+      "email": "doe@email.com",
+      "age": 5,
+      "type": "dog",
+      "year": 2023,
+      "month": 1,
+      "day": 4,
+      "id": 12
+    },
+    {
+      "name": "Hej",
+      "email": "hahaha@hotmail.com",
+      "age": 3,
+      "type": "dog",
+      "year": 2023,
+      "month": 1,
+      "day": 4,
+      "id": 13
+    },
+    {
+      "name": "Tintin",
+      "email": "Tintin@mail.com",
+      "age": 23,
+      "type": "",
+      "year": 2023,
+      "month": 1,
+      "day": 4,
+      "id": 14
     }
   ]
 }

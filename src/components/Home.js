@@ -6,7 +6,7 @@ const Home = () => {
   const [users, setUsers] = useState(null)
 
   useEffect(() => {
-    fetch('http://localhost:3001/users')
+    fetch('http://localhost:3001/users') //Pass in the endpoint.
       .then(res => {
         return res.json();
       })

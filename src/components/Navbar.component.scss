@@ -18,7 +18,13 @@ h1 {
 
       .credit {
         color:#FFF;
+        font-weight:bolder;
       }
+
+      .credit:hover {
+        color:slategray;
+      }
+
      a {
       color: azure;
       margin-left: 16px;

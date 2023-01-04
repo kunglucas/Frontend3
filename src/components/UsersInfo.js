@@ -4,7 +4,7 @@ import useFetch from "./useFetch";
 //We have written a function making it possible to delete a user using a delete button.
 const UsersInfo = () => {
     const { id } = useParams();
-    const { data: user, error, isPending } = useFetch('http://localhost:3001/users/' + id);
+    const { data: user, error } = useFetch('http://localhost:3001/users/' + id);
     const history = useHistory();
     const handleDelete = () => {
         fetch('http://localhost:3001/users/' + user.id, {
@@ -14,7 +14,9 @@ const UsersInfo = () => {
         }) 
       }
     return (
+      <>
         <table>
+        <thead>
         <tr>
           <th>Name</th>
           <th>Age</th>
@@ -25,10 +27,10 @@ const UsersInfo = () => {
           <th>Day</th>
           <th>Edit</th>
         </tr>
-        { isPending && <div>Loading...</div> }
-        { error && <div>{ error }</div> }
+        </thead>
         { user && (
-          <tr>
+          <tbody key={user.id}>
+          <tr key={user.id}>
             <td>{ user.name }</td>
             <td>{ user.age }</td>
             <td>{ user.email }</td>
@@ -38,8 +40,11 @@ const UsersInfo = () => {
             <td>{ user.day }</td>
             <td><button className="btn-delete" onClick={handleDelete}>Delete</button></td>
           </tr>
+          </tbody>
         )}
       </table>
+      { error && <p>{ error }</p> }
+      </>
     );
   }
  

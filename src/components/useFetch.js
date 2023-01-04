@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-  const useFetch = (url) => {
+  const useFetch = (url) => { //Fetching the url/endpoint.
   const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
@@ -32,9 +32,9 @@ import { useState, useEffect } from 'react';
       })
     });
 
-    // abort the fetch
+    //Abort the fetch.
     return () => abortCont.abort();
-  }, [url])
+  }, [url]) //Dependencies.
 
   return { data, isPending, error };
 }
